@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Дискриминант</title>
+</head>
+<body>
+<h1>Решение дискриминанта</h1>
+a=<input type="text" id="a"></input><br>
+b=<input type="text" id="b"></input><br>
+c=<input type="text" id="c"></input><br>
+<input type="submit" onclick="solve(a,b,c);")></input>
+<script>
+function solve(a,b,c)
+{
+//alert('Решение...В процессе...');
+a=document.getElementById('a').value;
+b=document.getElementById('b').value;
+c=document.getElementById('c').value;
+s=(b*b)-(4*a*c);
+alert('Решение дискриминанта='+s);
+}
+</script>
+</body>
+</html>
