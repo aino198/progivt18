@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -13,12 +13,17 @@ c=<input type="text" id="c"><br>
 <script>
 function solve(a,b,c)
 {
-//alert('Решение...В процессе...');
 a=document.getElementById('a').value;
 b=document.getElementById('b').value;
 c=document.getElementById('c').value;
 s=(b*b)-(4*a*c);
-alert('Решение дискриминанта='+s);
+p=Math.sqrt(s);
+x1=(-b+p)/2*a;
+x2=(-b-p)/2*a;
+d='Решение дискриминанта=';
+v='x1=';
+g='x2=';
+alert(d+s+'    '+v+x1+'    '+g+x2);
 }
 </script>
 </body>
